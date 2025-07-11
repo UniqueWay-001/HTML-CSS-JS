@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <script type="module" src="script.js"></script>
+    <div class="quiz-container" id="quiz">
+      <p id="timer">Time Left: 5s</p>
+      <h2 class="main-title">Quiz Game</h2>
+      <h1 id="question">Question</h1>
+      <div class="options" id="options"></div>
+      <p id ="feedback"></p>
+      <p id="explanation"></p>
+      <button id="nextBtn" disabled>Next</button>
+      <button id="retryBtn" style="display: none;">Retry</button>
+    </div>
+
+  <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+</body>
+
+</html>
